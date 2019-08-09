@@ -93,7 +93,7 @@ double quad_bin_search(int target, int array[], int n) {
 int main() {
 
 	const int MAX_SIZE = 6;
-	const int NUM_SEARCHES = 10;
+	const int NUM_SEARCHES = 100;
 	int target;
 	double total_seq_time, total_bin_time, total_quad_time;
 
@@ -125,9 +125,9 @@ int main() {
 		}
 
 		// Print results for this array size
-		cout << "Sequential search takes" << total_seq_time/1000. << " s for an input of size " << size << "\n";
-		cout << "Binary search takes" << total_bin_time/1000. << " s for an input of size " << size << "\n";
-		cout << "Quadratic binary search takes" << total_quad_time/1000. << " s for an input of size " << size << "\n";
+		cout << "Sequential search takes " << total_seq_time/1000. << " s for an input of size " << size << "\n";
+		cout << "Binary search takes " << total_bin_time/1000. << " s for an input of size " << size << "\n";
+		cout << "Quadratic binary search takes " << total_quad_time/1000. << " s for an input of size " << size << "\n";
 		cout << "\n";
 
 	};
